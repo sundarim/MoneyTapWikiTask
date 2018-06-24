@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_page_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:visibility="visible"
+        android:drawablePadding="@dimen/dimen_full_margin"
+        android:drawableTop="@mipmap/ic_no_data"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        style="@style/Regular.Subheading"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/textview_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_half_margin"
+       />
+
+</RelativeLayout>

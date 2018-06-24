@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_half_margin"
+        android:layout_marginTop="@dimen/dimen_half_margin"
+        android:layout_marginStart="@dimen/dimen_half_margin">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawablePadding="@dimen/dimen_half_margin"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:hint="@string/msg_search_text"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dimen_full_margin" />
+        <ProgressBar
+
+           android:layout_gravity="bottom"
+            tools:visibility="visible"
+            android:id="@+id/progressbar_search"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:layout_below="@id/cardview_search"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+
+        />
+    <TextView
+        android:drawableTop="@drawable/search_wikipedia_24"
+        android:id="@+id/textview_search_data"
+        style="@style/Regular.Subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/msg_no_results_found"
+         />
+
+</RelativeLayout>

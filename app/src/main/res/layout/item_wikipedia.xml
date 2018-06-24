@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+
+    android:layout_marginStart="@dimen/dimen_half_margin"
+    android:layout_marginTop="@dimen/dimen_half_margin"
+    android:layout_marginEnd="@dimen/dimen_half_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/dimen_half_margin">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+    <LinearLayout
+        android:layout_gravity=""
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingStart="@dimen/dimen_half_margin"
+        android:paddingEnd="@dimen/dimen_half_margin"
+        style="@style/Regular.Subheading"
+        tools:text="Helloooo"
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:paddingStart="@dimen/dimen_half_margin"
+            android:paddingEnd="@dimen/dimen_half_margin"
+            style="@style/Regular.Body1"
+            tools:text="Helloooo"
+            android:id="@+id/textview_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
